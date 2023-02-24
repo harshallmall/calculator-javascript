@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="calculator.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body background="./borealis.jpg">
+    <main class="main">
+      <div class="calculator">
+        <div class="screen">
+          <div class="screen-previous" id="previousOperation"></div>
+          <div class="screen-present" id="presentOperation">0</div>
+        </div>
+        <div class="buttons">
+          <button class="button button-purple span-2"id="clearButton" onclick="this.blur();">Clear</button>
+          <button class="button button-powderblue span-2" id="deleteButton" onclick="this.blur();">Delete</button>
+          <button class="button" onclick="this.blur();" data-number>7</button>
+          <button class="button" onclick="this.blur();" data-number>8</button>
+          <button class="button" onclick="this.blur();" data-number>9</button>
+          <button class="button" onclick="this.blur();" data-operator>÷</button>
+
+          <button class="button" onclick="this.blur();" data-number>4</button>
+          <button class="button" onclick="this.blur();" data-number>5</button>
+          <button class="button" onclick="this.blur();" data-number>6</button>
+          <button class="button" onclick="this.blur();" data-operator>x</button>
+
+          <button class="button" onclick="this.blur();" data-number>1</button>
+          <button class="button" onclick="this.blur();" data-number>2</button>
+          <button class="button" onclick="this.blur();" data-number>3</button>
+          <button class="button" onclick="this.blur();" data-operator>-</button>
+
+          <button class="button" onclick="this.blur();" id="decimalButton">.</button>
+          <button class="button" onclick="this.blur();" data-number>0</button>
+          <button class="button" onclick="this.blur();" id="equalsButton">=</button>
+          <button class="button" onclick="this.blur();" data-operator>+</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright &copy;
+        <script>document.write(new Date().getFullYear())</script>
+        <a href="https://github.com/harshallmall" target="_blank" style="text-decoration: none;">harshallmall</a>
+        </p>
+    </footer>
+    </body>
+</html>

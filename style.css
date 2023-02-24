@@ -1,0 +1,148 @@
+:root {
+    --font: black;
+    --border: lightpink;
+    --screen: #eee;
+    --calculator: antiquewhite;
+    --button: #da82e6;
+    --button-hover: grey;
+    --button-active: greenyellow;
+    --button-purple: lavender;
+    --button-purple-hover: lavender;
+    --button-purple-active: lightpink;
+    --button-powderblue: powderblue;
+    --button-powderblue-hover: #45d1e3;
+    --button-powderblue-active: #83c5eedb;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    color: var(--font);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
+    margin-bottom: 100px;
+    background-size: cover;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.calculator {
+    width: 400px;
+    border: 3px var(--border) solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--calculator);
+}
+
+.screen {
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--screen);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.screen-previous {
+    min-height: 32px;
+    font-size: 20px;
+}
+
+.screen-present {
+    min-height: 64px;
+    font-size: 40px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.button {
+    padding: 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    background-color: var(--button);
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+}
+
+.button:active {
+    background-color: var(--button-active);
+}
+
+.button-purple {
+    background-color: var(--button-purple);
+}
+
+.button-purple:hover {
+    background-color: var(--button-purple-hover);
+}
+
+.button-purple:active {
+    background-color: var(--button-purple-active);
+}
+
+.button-powderblue {
+    background-color: var(--button-powderblue);
+}
+
+.button-powderblue:hover {
+    background-color: var(--button-powderblue-hover);
+}
+
+.button-powderblue:active {
+    background-color: var(--button-powderblue-active);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}
